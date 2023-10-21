@@ -15,7 +15,7 @@ def test_the_year_can_be_divided_with_4_but_not_100(input_year, result_bool):
 
 @pytest.mark.parametrize("input_year_2, result_bool_2",
 [
-    (1800, True),
+    (1800, False),
     (2200, False),
     (1900, False),
     (1200, True),
