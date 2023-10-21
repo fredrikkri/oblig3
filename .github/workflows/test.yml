@@ -25,7 +25,7 @@ jobs:
         run: pipx install poetry
 
       - name: Install dependencies
-        run: poetry install
+        run: pip install -r requirements.txt
 
       - name: tests run
         run: pytesttest -r wr w

@@ -1,4 +1,3 @@
-import pytest
 import datetime
 
 def is_leapyear(year):
