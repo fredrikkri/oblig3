@@ -10,18 +10,14 @@ on:
 
 jobs:
   test:
-    name: tests run
+    name: Run tests
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout code and setup
+      - name: Checkout code
         uses: actions/checkout@v2
 
-      - name: Set working directory
-        run: cd oblig3
-        working-directory: ./oblig3
-
-      - name: Setup Python
+      - name: Set up Python
         uses: actions/setup-python@v2
         with:
           python-version: '3.10'
@@ -29,5 +25,5 @@ jobs:
       - name: Install dependencies
         run: pip install -r requirements.txt
 
-      - name: tests run
-        run: pytest
+      - name: Run tests
+        run: pytest test/
