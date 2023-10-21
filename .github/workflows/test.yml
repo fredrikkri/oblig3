@@ -18,7 +18,7 @@ jobs:
         uses: actions/checkout@v3
       - name: Set working directory
         run: cd https://github.com/fredrikkri/oblig3/tree/3d3245ea7e0a97fa010f6b5a9713b20f2ca44b08
-        working-directory: path/to/your/project
+        working-directory: https://github.com/fredrikkri/oblig3/tree/3d3245ea7e0a97fa010f6b5a9713b20f2ca44b08
 
       - name: Setup Python
         uses: actions/setup-python@v4
