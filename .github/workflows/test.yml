@@ -1,0 +1,33 @@
+name: Test with Pytest 
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  test:
+    name: tests run
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code and setup
+        uses: actions/checkout@v3
+
+      - name: Setup Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
+      - name: Install poetry
+        run: pipx install poetry
+
+      - name: Install dependencies
+        run: poetry install
+      - name: tests run
+        run: pip install -r requirements.txt
+
+      - name: tests run
+        run: pytesttest -r wr w
