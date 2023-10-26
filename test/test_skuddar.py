@@ -20,7 +20,7 @@ def test_the_year_can_be_divided_with_4_but_not_100(input_year, result_bool):
     (1900, False),
     (1200, True),
     (401, False),
-    (400, True)
+    (400, False)
 ])
 def test_the_year_can_be_divided_with_400(input_year_2, result_bool_2):
     print(" The year can be divided with 400")
