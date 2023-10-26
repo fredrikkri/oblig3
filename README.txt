@@ -6,3 +6,4 @@ Dette er linken til github repo:
 
 i yml filen bruker jeg standard innstillinger for github actions til python ved å bruke actions/checkout@v2 og actions/setup-python@v2.
 jeg har konfigurert slik at github actions kjører hver gang jeg comitter.
+ 
